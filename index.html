@@ -56,12 +56,12 @@
         }
         #center{
             width: 45%;
-            height: 1000px;
+            height: auto;
         }
         #rightsidebar{
-            width: 25%;
-            height: 1000px;
-            border: 1px solid green;
+            width: 25%px;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         }
         #leftsidebar>div{
             display: flex;
@@ -93,6 +93,111 @@
         }
         #center>div:nth-child(2) div>img{
             width: 100%;
+        }
+        #list1 ul,#list2 ul{
+            width: 372px;
+            height: 276px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #list1 li,#list2 li{
+            display: flex;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            margin-left: -15px;
+            width: 372px;
+            height: 76px;
+        }
+        #list1 li img,#list2 li img{
+            border-radius: 5px;
+        }
+        span{
+            width: 122px;
+            height: 18px;
+            font-size: 15px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ffffff;
+            background-color: #2b2b2b;
+            padding: 3px 10px;
+        }
+        #rightsidebar li{
+            list-style-type: none;
+            display: flex;
+            width: 325px;
+            height: 97px;
+            font-size: 15px;
+            margin-left: -30px;
+        }
+        #rightsidebar li img{
+            width: 80px;
+            height: 60px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #rightsidebar li h3{
+            padding-right: 30px;
+        }
+        #opinion{
+            width: 935px;
+            height: 144px;
+            margin-top: 18px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #opinion ul{
+            width: 905px;
+            height: 96px;
+            margin-left: -30px;
+            display: flex;
+        }
+        #opinion li{
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            margin-right: 24px;
+            font-size: 15px;
+        } 
+        #opinion img{
+            width: 100px;
+            height: 75px;
+        }
+        #footer{
+            width:100%;
+            height: auto;
+            margin-top: 50px;
+            padding-bottom: 20px;
+            display: flex;
+            background-color: rgb(212, 212, 212);
+        }
+        #footerleft{
+            width: 225px;
+            height: 138px;
+            border-right: 1px solid #969292;
+            padding-top: 20px;
+            display: grid
+        }
+        #footerleft>img{
+            width: 120px;
+        }
+        #footerleft h3{
+            font-size: 15px;
+            font-family: sans-serif;
+            /* margin-top: -50px; */
+        }
+        #icons>img{
+            width: 30px;
+            height: 30px;
+        }
+        #righttop,#rightmid,#rightbottom{
+            width: 898px;
+            height: auto;
+            margin-left: 50px;
+            display: flex;
+            font-size: 14px;
+            gap: 8px;
+            border-bottom: 1px solid gray;
         }
     </style>
 </head>
@@ -191,13 +296,135 @@
                     <h3>Yogi Adityanath Cabinet Trouble: Minister Resigns, Another In Delhi</h3>
                 </div>
                 <div>
-                    <img src="https://c.ndtvimg.com/2022-02/mkcddahg_yogi-adityanathuplakhimpur-kheripti_625x300_20_February_22.jpg?downsize=277:170" alt="">
-                    <h3>Yogi Adityanath Cabinet Trouble: Minister Resigns, Another In Delhi</h3>
+                    <img src="https://c.ndtvimg.com/2019-09/ekqv5sl4_sharad-pawar-pti_625x300_25_September_19.jpg?downsize=277:170" alt="">
+                    <h3>Sharad Pawar Dissolves All Units Of Party, Days After Shiv Sena Coup</h3>
                 </div>
             </div>
-            
+            <div id="list1">
+                <ul>
+                    <li>
+                        <h3>Sharad Pawar Dissolves All Units Of Party, Days After Shiv Sena Coup</h3>
+                        <img src="https://c.ndtvimg.com/2019-09/i6okddck_sharad-pawar-pti_120x90_25_September_19.jpg?downsize=100:75" alt="">
+                    </li>
+                    <li>
+                        <h3>$79 Billion Of Unhedged Debt Is Next Pain Point For Rupee</h3>
+                        <img src="https://c.ndtvimg.com/2022-07/te8gpin8_rupee-bloomberg_625x300_06_July_22.jpg?im=FaceCrop,algorithm=dnn,width=100,height=75" alt="">
+                    </li>
+                    <li>
+                        <h3>On Camera, Massive Ambulance Crash At Toll Booth In Karnataka, 4 Dead</h3>
+                        <img src="https://c.ndtvimg.com/2022-07/jgaa6g78_ambulance-accident_120x90_20_July_22.jpg?downsize=100:75" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div id="list2">
+                <ul>
+                    <li>
+                        <h3>Viral: Chef Invents Fusion Dish Called 'Butter Chicken Mac And Cheese'</h3>
+                        <img src="https://c.ndtvimg.com/2022-07/3gcltt2o_butter-chicken-mac-and-cheese-240_240x180_21_July_22.png?downsize=100:75" alt="">
+                    </li>
+                    <li>
+                        <h3>Laal Singh Chaddha New Poster: Presenting Naga Chaitanya As Balaraju</h3>
+                        <img src="https://c.ndtvimg.com/2022-07/jp3h852o_naga-chaitanya_120x90_20_July_22.jpg?downsize=100:75" alt="">
+                    </li>
+                    <li>
+                        <h3>KGF Actor Yash And Radhika Pandit Are "Lost In A Far Away Land". See Pics</h3>
+                        <img src="https://c.ndtvimg.com/2022-07/6pucf5r8_yash_120x90_20_July_22.jpg?downsize=100:75" alt="">
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="rightsidebar"></div>
+        <div id="rightsidebar">
+            <span>BUSINESS NEWS</span>
+            <ul>
+                <li>
+                    <h3>$79 Billion Of Unhedged Debt Is Next Pain Point For Rupee</h3>
+                    <img src="https://c.ndtvimg.com/2022-07/te8gpin8_rupee-bloomberg_625x300_06_July_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>Microsoft Investigates MS Teams Outage For Thousands Of Users</h3>
+                    <img src="https://c.ndtvimg.com/2022-07/1hp0mkhg_reuters-image_625x300_21_July_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>$79 Billion Of Unhedged Debt Is Next Pain Point For Rupee</h3>
+                    <img src="https://c.ndtvimg.com/2022-07/1l2msu3o_image_625x300_21_July_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>Rupee Hits Another New Record Low, Trades Above 80 Per Dollar</h3>
+                    <img src="https://c.ndtvimg.com/2020-01/cfv5hqvg_rupee-reuters_625x300_23_January_20.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>$79 Billion Of Unhedged Debt Is Next Pain Point For Rupee</h3>
+                    <img src="https://c.ndtvimg.com/2022-07/te8gpin8_rupee-bloomberg_625x300_06_July_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>Microsoft Investigates MS Teams Outage For Thousands Of Users</h3>
+                    <img src="https://c.ndtvimg.com/2022-07/1hp0mkhg_reuters-image_625x300_21_July_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>$79 Billion Of Unhedged Debt Is Next Pain Point For Rupee</h3>
+                    <img src="https://c.ndtvimg.com/2022-07/1l2msu3o_image_625x300_21_July_22.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+                <li>
+                    <h3>Rupee Hits Another New Record Low, Trades Above 80 Per Dollar</h3>
+                    <img src="https://c.ndtvimg.com/2020-01/cfv5hqvg_rupee-reuters_625x300_23_January_20.jpg?im=FaceCrop,algorithm=dnn,width=80,height=60" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="opinion">
+        <h3>OPINION</h3>
+        <ul>
+            <li>
+                <img src="https://c.ndtvimg.com/2019-08/3ajbrnrg_sonia-gandhi-rahul-gandhi-cwc-pti_240x180_10_August_19.jpg?downsize=100:75" alt="">
+                <h4>Opinion: Congress Is Sending A Big Message To Opposition Parties</h4>
+            </li>
+            <li>
+                <img src="https://i.ndtvimg.com/i/2015-04/students-exams-generic-650-thinkstock_650x400_61429633551.jpg?im=FaceCrop,algorithm=dnn,width=100,height=75" alt="">
+                <h4>Opinion: How Indian Tutors Are Making Millions Off Anxiety</h4>
+            </li>
+            <li>
+                <img src="https://c.ndtvimg.com/2022-06/6n186l2o_yashwant-sinha-rahul-gandhi-ani-650_650x400_27_June_22.jpg?im=FaceCrop,algorithm=dnn,width=100,height=75" alt="">
+                <h4>Opinion: The Masterful Politics Behind BJP's President, Veep Picks</h4>
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div id="footerleft">
+            <img src="https://cdn.ndtv.com/static/ndtv_2014/images/ndtvlogo_blk.png?1" alt="">
+            <h3>FOLLOW US ON</h3>
+            <div id="icons">
+                <img src="images/homepage_sprite_sep2017 (1).png" style="background-color: white;" alt="">
+                <img src="images/homepage_sprite_sep2017 2.png" alt="">
+                <img src="images/homepage_sprite_sep2017 3.png" alt="">
+                <img src="images/homepage_sprite_sep2017 4.png" alt="">
+            </div>
+            <input type="text" placeholder="Search">
+        </div>
+        <div id="footerright">
+            <div id="righttop">
+                    <p>ABOUT US</p>
+                    <p>ADVERTISE</p>
+                    <p>EPG SERVISES</p>
+                    <p>CAREERS</p>
+                    <p>CHANNELS</p>
+                    <p>DISCLAIMER</p>
+                    <p>FEEDBACK</p>
+                    <p>INVESTORS</p>
+                    <p>REDRESSALS</p>
+            </div>
+            <div id="rightmid">
+                    <p>NEWS</p>
+                    <p>BUSINESS</p>
+                    <p>HINDI</p>
+                    <p>MOVIES</p>
+                    <p>CRICKET</p>
+                    <p>FOOD</p>
+                    <p>TECH</p>
+                    <p>AUTO</p>
+                    <p>TRAINS</p>
+            </div>
+            <div id="rightbottom"><p>THIS WEBSITE FOLLOWS THE DNPA CODE OF ETHICS</p></div>
+        </div>
     </div>
 </body>
 </html>
