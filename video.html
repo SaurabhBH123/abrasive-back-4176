@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       #navbar1{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 100%;
+            gap: 20px;
+            color: #C6C6C6;
+            background-color: #423f3f;
+        }
+        #navbar1>p{
+            font-size: 10px;
+        }
+        #logo{
+            width: 80%;
+            margin: auto;
+            height: 100px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        #navbar2{
+            width: 80%;
+            height: 50px;
+            margin: auto;
+            display: flex;
+	        background-color:white;
+            gap: 20px;
+            align-items: center;
+            color: rgb(188, 183, 183);
+            position: sticky;
+	        top: 0;
+	        z-index:100;
+        }
+        #sec{
+            border-radius: 5px;
+            margin-left: 10px;
+            padding: 8px 12px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #navright{
+            margin: auto;
+            display: flex;
+            margin-right: 0px;
+            gap: 10px;
+            padding: 8px 15px;
+        }
+        .line{
+            border: 0;
+            height: 0;
+            width: 80%;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        #content{
+            width: 80%;
+            height: auto;
+            margin: auto;
+            display: flex;
+        }
+        #main{
+            width: 70%;
+            height: 100%;
+        }
+        #sidebar{
+            width: 30%;
+            height: 100%;
+        }
+        #category{
+            display: flex;
+            gap: 10px;
+        }
+        h1{
+            font-family: sans-serif;
+            color: rgb(163, 158, 158);
+        }
+        #featuredvideos,#topshows,#mostwatchedvideos,#justaddedvideos{
+            width: 100%;
+            height: auto;
+            display: grid;
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #326891;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,220px);
+            gap: 10px;
+        }
+        #featuredvideos img,#topshows img,#mostwatchedvideos img,#justaddedvideos img{
+            width: 135px;
+            height: 100px;
+        }
+        .time{
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar1">
+        <p>NDTV</p>
+        <p>BUSINESS</p>
+        <p>MOVIES</p>
+        <p>CRICKET</p>
+        <p>TECH</p>
+        <p>FOOD</p>
+        <p>CRYPTO</p>
+        <p>WEB STORIES</p>
+        <p>EDUCATION</p>
+        <p>AUTO</p>
+        <p>SWASTH</p>
+        <p>LIFESTYLE</p>
+        <p>HEALTH</p>
+        <p>SHOPPING</p>
+        <p>ART</p>
+    </div>
+    <hr class="line">
+    <div id="logo">
+        <img src="https://cdn.ndtv.com/static/ndtv_2014/images/ndtvlogo_blk.png?1" alt="">
+    </div>
+    <div id="navbar2">
+        <div id="sec">SECTIONS</div>
+        <div>HOME | VIDEO</div>
+        <div id="navright">
+            <img src="images/icons8-notification-24.png" alt="">
+            <input type="text" placeholder="Search here...">
+            <img src="images/icons8-search-30.png" alt="">
+        </div>
+    </div>
+    <hr class="line">
+    <div id="content">
+        <div id="main">
+            <h1>Video</h1>
+            <hr class="line">
+            <div id="category">
+                <p>Top Videos</p>
+                <p>Latest</p>
+                <p>Category</p>
+                <p>Channel</p>
+                <p>Shows</p>
+                <p>NDTV Classics</p>
+                <p>Shot on Samsung</p>
+            </div>
+            <h2>Featured Videos</h2>
+            <div id="featuredvideos">
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158427ZX.gif" alt="">
+                    <p>Pics Expose China's Inroads Near Doklam - Bid To Bypass Indian Defences?</p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95728SXYZ.gif" alt="">
+                    <p>Video : In CBSE Class 12, Tanya Singh Achieves A Perfect Score Of 500</p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95727SXYZ.gif" alt="">
+                    <p>Support Aspiration Of Lankans Within Democratic Framework: Indian Diplomat</p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95704SXYZ.gif" alt="">
+                    <p>Arvind Kejriwal Says Charges Against Deputy Manish Sisodia "Totally False"</p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95660SXYZ.gif" alt="">
+                    <p>Liger Trailer: Ranveer Singh's LOL Comment On Vijay Deverakonda's Chappals</p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/mancarriesparents_beeps_104941.gif" alt="">
+                    <p>Watch: Man Carries Old Parents On Shoulders During Kanwar Yatra</p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/carcatchesfire_ani_104936.gif" alt="">
+                    <p>Narrow Escape For Passengers As Moving Car Catches Fire In Assam </p>
+                    <p class="time">4:25</p>
+                </div>
+                <div>
+                    <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95690SXYZ.gif" alt="">
+                    <p>Smile, Pose, Repeat: Ranbir Kapoor's Day Out </p>
+                    <p class="time">4:25</p>
+                </div>
+            </div>
+            <h2>Top Shows</h2>
+            <div id="topshows">
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158999ZX.gif" alt="">
+                <p>Droupadi Murmu: India's 15th President</p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158998ZX.gif" alt="">
+                <p>Enter, Madam President: Droupadi Murmu Win Exposes Opposition Disunity?</p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158988ZX.gif" alt="">
+                <p>Know Your President: Droupadi Murmu</p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158743ZX.gif" alt="">
+                <p>Why Are More Indians Giving Up Citizenship? </p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158742ZX.gif" alt="">
+                <p>Mohammed Zubair Leaves Jail After 23 Days As Court Ends "Vicious Cycle"</p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158741ZX.gif" alt="">
+                <p>Mohammed Zubair Walks Free After 23 Days </p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95397SXYZ.gif" alt="">
+                <p>रवीश कुमार का प्राइम टाइम : अरावली खा गए माफ़िया, ज़ुबैर को ज़मानत </p>
+                <p class="time">4:25</p>
+            </div>
+            <div>
+                <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158461ZX.gif" alt="">
+                <p>Abki Baar 80 Paar: Rupee In Tailspin</p>
+                <p class="time">4:25</p>
+            </div>
+            </div>
+            <h2>Most Watched Videos</h2>
+            <div id="mostwatchedvideos">
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158844ZX.gif" alt="">
+            <p>Sharad Pawar Dissolves All Units Of Party, Days After Shiv Sena Coup</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95540SXYZ.gif" alt="">
+            <p>Arvind Kejriwal Defies Lt Governor, Says Will Go Ahead With Singapore Trip</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95481SXYZ.gif" alt="">
+            <p>Sonia Gandhi To Be Questioned, Children Accompany Her</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158899ZX.gif" alt="">
+            <p>Droupadi Murmu Ahead By Huge Margin In Presidential Election After Round 1</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158900ZX.gif" alt="">
+            <p>Sonia Gandhi Questioned, Congress Stops Trains, Burns Car</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158836ZX.gif" alt="">
+            <p>India's New President To Be Declared Today</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158959ZX.gif" alt="">
+            <p>Droupadi Murmu Continues To Lead In Presidential Election</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/158927ZX.gif" alt="">
+            <p>Droupadi Murmu: Once A Councillor And Now India's President-Elect</p>
+            <p class="time">4:25</p>
+        </div>
+            </div>
+            <h2>Just Added Videos</h2>
+            <div id="justaddedvideos">
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95742SXYZ.gif" alt="">
+            <p class="time">BS Yediyurappa Gets Relief From Supreme Court In Corruption Case</p>
+        <p>4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/22072022_n_droupadimurmu_78709.gif" alt="">
+            <p>When Governor Droupadi Murmu Danced With Villagers In 2018</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/159131ZX.gif" alt="">
+            <p>Watch: Salman Khan Visits Mumbai Police Commissioner's Office</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95740SXYZ.gif" alt="">
+            <p>Mukesh Ambani, Family's Security Can Stay With Centre, Says Supreme Court</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/159109ZX.gif" alt="">
+            <p>Arvind Kejriwal vs BJP After Lt Governor Calls For New CBI Probe</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/159111ZX.gif" alt="">
+            <p>"Not Time For Whataboutery": Opposition Veep Candidate To Mamata Banerjee</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95727SXYZ.gif" alt="">
+            <p>एक मित्र होने के नाते...: श्रीलंका संकट के मद्देनजर भारत के योगदान पर बोले भारतीय उच्चायुक्त</p>
+            <p class="time">4:25</p>
+        </div>
+        <div>
+            <img src="https://drop.ndtv.com/video/images/vod/gif/2022-07/95728SXYZ.gif" alt="">
+            <p>In CBSE Class 12, Tanya Singh Achieves A Perfect Score Of 500</p>
+            <p class="time">4:25</p>
+        </div>
+            </div>
+        <div id="sidebar"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#logo").addEventListener("click",function(){
+        window.location.href="index.html";
+    })
+</script>
