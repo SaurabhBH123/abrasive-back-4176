@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITIES</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar1{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            font-family: sans-serif;
+            font-size: 11px;
+            width: 100%;
+            gap: 20px;
+            color: #2e2e2e;
+            background-color: #fafafa;
+        }
+        #navbar1>p{
+            font-size: 10px;
+        }
+        #navbar2{
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            font-family: sans-serif;
+            font-size: 13px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            color: #2e2e2e;
+            background-color: #fafafa;
+        }
+        
+        #navbar2 img{
+            width: 40px;
+            height: 40px;
+        }
+        #logo>img{
+            width: 100px;
+            height: 30px;
+            margin-bottom: -20px;
+            margin-right: 50px;
+        }
+        #heading{
+            width: 900px;
+            height: auto;
+        }
+        #select{
+            float: right;
+            width: 250px;
+            margin-top: 20px;
+        }
+        h1{
+            font-size: 42px;
+            font-family: sans-serif;
+        }
+        #select select{
+            border-radius: 4px;
+            height: 40px;
+            font-size: 14px;
+            width: 100%;
+            outline: none;
+            position: relative;
+            top: 0;
+            right: 0;
+            /* font-family: var(--ff-one); */
+            background-color: white;
+            /* appearance: none; */
+            border: 1px solid #e1e1e1;
+            color: #323232;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #newslist{
+            width: 635px;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .newsitem{
+            display: flex;
+            justify-content: space-between;
+            border-radius: 4px;
+            border: 1px solid #eaeaea;
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: all 0.2s ease-in-out;
+            background-color: white;
+            font-family: sans-serif;
+        }
+        .img{
+            flex: 0 0 144px;
+            border-radius: 6px;
+            height: 108px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .content{
+            width: calc(100% - 162px);
+        }
+        h2{
+            font-size: 20px;
+        }
+        span{
+            font-size: 12px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="navbar1">
+        <p>NDTV</p>
+        <p>BUSINESS</p>
+        <p>MOVIES</p>
+        <p>CRICKET</p>
+        <p>TECH</p>
+        <p>FOOD</p>
+        <p>CRYPTO</p>
+        <p>WEB STORIES</p>
+        <p>EDUCATION</p>
+        <p>AUTO</p>
+        <p>SWASTH</p>
+        <p>LIFESTYLE</p>
+        <p>HEALTH</p>
+        <p>SHOPPING</p>
+        <p>ART</p>
+    </div>
+    <div id="navbar2">
+        <div id="logo">
+            <img src="images/download.png" alt="">
+        </div>
+        <p>LIVE TV</p>
+        <p>LATEST</p>
+        <p>COVID</p>
+        <p>INDIA</p>
+        <p>OPINION</p>
+        <p id="video">VIDEO</p>
+        <p id="cities">CITIES</p>
+        <p>WORLD</p>
+        <p>OFFBEAT</p>
+        <p>TRENDS</p>
+        <p>PHOTOS</p>
+    </div>
+        <div id="heading">
+            <div id="select">
+                <select id="city">
+                    <option value="">Select the City</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="New Delhi">New Delhi</option>
+                </select>
+            </div>
+            <h1>Cities</h1>
+        </div>
+        <div id="newslist">
+        </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#logo").addEventListener("click",function(){
+        window.location.href="index.html";
+    })
+
+    let newsData=[
+		{
+			image:"https://c.ndtvimg.com/2022-07/3dqpqkc8_injured-woman-carried-on-stretcher-in-palghar-_120x90_23_July_22.jpg",
+			head:"Video: Injured Woman Carried Through River In Maharashtra's Palghar",
+			city:"Mumbai",
+			desc:"A group of villagers in Maharashtra braved swollen river and slippery patches on mountain as they carried an injured woman on a makeshift cloth stretcher for several kilometres for treatment at a hospital.",
+		},
+		{
+			image:"https://c.ndtvimg.com/new-delhi-railway-station_120x90_1528212177114.jpg",
+			head:"Woman Gangraped At New Delhi Station, 4 Railway Staff Arrested: Police",
+			city:"New Delhi",
+			desc:"Four railway employees have been arrested in connection with the gangrape of a 30-year-old woman on a platform at New Delhi railway station late, police said.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2022-07/4jvgmllo_pilot-flies-parents-shares-video-on-instagram_120x90_23_July_22.jpg",
+			head:"Watch: Jaipur Couple Boards Flight Home, Gets The Best Surprise Ever",
+			city:"Pune",
+			desc:"An Indian pilot recently shared a video on his Instagram account that went viral and made many people go 'aww'! Kamal Kumar, a pilot that goes by the username @desipilot11 recently flew his parents to Jaipur and recorded the video on camera.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2022-07/5oi3c85s_kanwar-devotees-hit-by-truck-in-hathras-up-twitter_120x90_23_July_22.jpg",
+			head:"6 Dead After 'Kanwar' Devotees Hit By Truck In UP's Hathras",
+			city:"Pune",
+			desc:"Six persons, part of a group of Kanwar Yatra pilgrims on their way to Bhopal from Haridwar, were crushed to death by a speeding truck in Uttar Pradesh's Hathras district in the early hours of the morning, police said.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2022-06/3ujembg8_udaipur-tailor-murdered-240_240x180_28_June_22.jpg",
+			head:"Udaipur Tailor's Murder: Probe Agency NIA Arrests Man Who Played Key Role",
+			city:"New Delhi",
+			desc:"A 19-year-old man, who allegedly played an important role in the conspiracy to kill a tailor in Rajasthan's Udaipur last month, has been arrested from the state, a National Investigation Agency (NIA) official said on Friday.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2022-07/ss6e5478_odisha-ambulance_625x300_22_July_22.jpg?im=FeatureCrop,algorithm=dnn,width=240,height=180",
+			head:"2 Bike Ambulances Launched For Remote Areas Of Odisha's Kalahandi",
+			city:"Pune",
+			desc:"Two bike ambulances were inaugurated in Odisha's Kalahandi district on Friday to cater to people living in remote areas.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2022-07/iiqvri5o_karnataka-generic_625x300_22_July_22.jpg?im=FitAndFill,algorithm=dnn,width=240,height=180",
+			head:"Karnataka Clears New Employment Policy",
+			city:"Pune",
+			desc:"The Karnataka cabinet on Friday gave its approval to the 'Karnataka Employment Policy 2022-25', mandating industries either expanding or setting up new units in the state, to increase the number of jobs they provide.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2020-06/bmpch44_west-bengal-generic-unsplash_625x300_22_June_20.jpg?im=FaceCrop,algorithm=dnn,width=240,height=180",
+			head:"Need For Liquid Waste Management In Rural Bengal: UNICEF",
+			city:"Pune",
+			desc:"The UNICEF (United Nations Children's Fund)has hailed the West Bengal government's initiatives on solid waste management, and emphasised on the need for faecal, plastic and liquid waste control in rural areas of the state.",
+		},
+		{
+			image:"https://i.ndtvimg.com/i/2015-11/bombay-high-court_240x180_51447700995.jpg",
+			head:"September Deadline For Shops To Put Marathi Signboard: Mumbai Civic Body Tells Court",
+			city:"Mumbai",
+			desc:"The Brihanmumbai Municipal Corporation on Friday told the Bombay High Court that it has extended till September the deadline given to shops and other establishments to put up signboards in Marathi Devanagari script.",
+		},
+		{
+			image:"https://c.ndtvimg.com/2022-07/3b01andc_delhi-constable-suicide_120x90_22_July_22.jpg",
+			head:"Delhi Police Constable Dies By Suicide Inside Car",
+			city:"New Delhi",
+			desc:"A head constable of Delhi Police's Crime Branch died by suicide at Shakarpur Police Colony on Friday.",
+		},
+		{
+			image:"https://c.ndtvimg.com/c698vdqo_bullet-train-generic_120x90_02_September_18.jpg",
+			head:"Bullet Train Project: Bids Invited To Construct Mumbai Station, Tunnel",
+			city:"New Delhi",
+			desc:"The National High Speed Rail Corporation Limited has invited bids for the design and construction of an underground station at Mumbai's Bandra Kurla Complex and for a tunnel for the bullet train project, Railway Minister Ashwini Vaishnaw said today.",
+		},{
+			image:"https://c.ndtvimg.com/2022-07/q9qr0dn_bjps-joshua-de-souza-_120x90_22_July_22.jpg",
+			head:"BJP's Joshua De Souza Elected As Goa Assembly Deputy Speaker",
+			city:"Pune",
+			desc:"BJP MLA Joshua De Souza was today elected as the Deputy Speaker of Goa Legislative Assembly.",
+		},
+	]
+	
+
+    document.querySelector("#city").addEventListener("change",handleFilter);
+	Display(newsData);
+	
+	
+	function Display(newsData){
+		document.querySelector("#newslist").innerHTML="";
+		newsData.forEach(function(elem){
+			let item=document.createElement("div");
+			item.setAttribute("class","newsitem");
+			let imgDiv=document.createElement("div");
+			imgDiv.setAttribute("class","img");
+			let image=document.createElement("img");
+			image.setAttribute("src",elem.image);
+			let contDiv=document.createElement("div");
+			contDiv.setAttribute("class","content");
+			let heading=document.createElement("h2");
+			heading.innerText=elem.head;
+			let city=document.createElement("span");
+			city.innerText=elem.city;
+			let desc=document.createElement("p");
+			desc.innerText=elem.desc;
+			
+			
+			contDiv.append(heading,city,desc);
+			imgDiv.append(image);
+			item.append(imgDiv,contDiv);
+			document.querySelector("#newslist").append(item);
+		})	
+	}
+
+    function handleFilter(){
+        let selected=document.querySelector("#city").value;
+        // console.log(selected);
+        let filteredList=newsData.filter(function(elem){
+            return elem.city==selected;
+        });
+        // console.log(filteredList);
+        Display(filteredList);
+    }
+
+</script>
