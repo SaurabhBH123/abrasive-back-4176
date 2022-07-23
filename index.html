@@ -48,14 +48,18 @@
             justify-content: space-around;
         }
         #leftsidebar{
-            width: 25%;
+            width: 340px;
             height: auto;
             display: grid;
+            float: left;
+            margin-right: 25px;
             gap: 10px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         }
         #center{
-            width: 45%;
+            width: 570px;
+            float: left;
+            margin-right: 20px;
             height: auto;
         }
         #rightsidebar{
@@ -432,5 +436,8 @@
 <script>
     document.querySelector("#video").addEventListener("click",function(){
         window.location.href="video.html"
+    })
+    document.querySelector("#cities").addEventListener("click",function(){
+        window.location.href="cities.html"
     })
 </script>
